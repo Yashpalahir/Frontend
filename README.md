@@ -1,1 +1,1 @@
-# quicksell-frontend-assignment
+# Quicksell Frontend Assignment
