@@ -1,0 +1,51 @@
+.card-title {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.card-title-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.card-title-left img {
+    height: 15px;
+    margin-right: 8px;
+}
+
+.card-title-left span {
+    margin-right: 8px;
+}
+
+.group-title {
+    font-weight: 500;
+}
+
+.group-count {
+    color: #707070;
+    font-weight: 100px;
+}
+
+.card-title-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-title-right-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card-title-right-btn img {
+    height: 15px;
+}
