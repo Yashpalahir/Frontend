@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19); */
+    border-bottom: 2px solid #E5E5E5;
 }
 
 .display-container {
@@ -22,11 +23,14 @@
 }
 
 .display img {
-    height: 20px;
+    height: 13px;
 }
 
 .display span {
     margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
 }
 
 .display-settings {
@@ -57,6 +61,7 @@
 
 .display-setting select {
     font-size: 13px;
+    font-weight: 500;
     color: #000000;
     padding: 1px 5px 1px 5px;
     border-radius: 5px;

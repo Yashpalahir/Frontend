@@ -15,7 +15,7 @@ function Order(items, parameter) {
     }
     else if(parameter === 'priority') {
         items.sort((a, b) => {
-            return a.priority - b.priority;
+            return b.priority - a.priority;
         });
     }
   return items;

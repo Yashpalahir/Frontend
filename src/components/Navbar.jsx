@@ -25,17 +25,17 @@ function Navbar({grouping, ordering, setGrouping, setOrdering}) {
             {isOpen ? <div className='display-settings' ref={drop}>
                 <div className='display-setting'>
                     <div>Grouping</div>
-                    <select value={grouping} onChange={e => {setGrouping(e.target.value.toLowerCase())}}>
-                        <option val='status'>status</option>
-                        <option val='user'>user</option>
-                        <option val='priority'>priority</option>
+                    <select value={grouping} onChange={e => {setGrouping(e.target.children[e.target.selectedIndex].getAttribute('data-id').toLowerCase())}}>
+                        <option key='status' data-id='status'>Status</option>
+                        <option key='user' data-id='user'>User</option>
+                        <option key='priority' data-id='priority'>Priority</option>
                     </select>
                 </div>
                 <div className='display-setting'>
                     <div>Sorting</div>
-                    <select value={ordering} onChange={e => {setOrdering(e.target.value.toLowerCase())}}>
-                        <option val='title'>title</option>
-                        {grouping !== 'priority' ? <option val='priority'>priority</option> : null}
+                    <select value={ordering} onChange={e => {console.log(e); setOrdering(e.target.children[e.target.selectedIndex].getAttribute('data-id').toLowerCase())}}>
+                        <option key='title' data-id='title'>Title</option>
+                        {grouping !== 'priority' ? <option key='priority' data-id='priority'>Priority</option> : null}
                     </select>
                 </div>
             </div> : null}
