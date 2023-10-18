@@ -21,8 +21,8 @@ function Card({ticket, grouping, user}) {
             <span>{ticket.title}</span>
         </div>
         <div className='card-footer'>
-            {grouping === 'priority' ? null : <img src={'/icons/priority/' + ticket.priority + '.svg'} />}
-            <div>
+            {grouping === 'priority' ? null : <div className='card-footer-priority'><img src={'/icons/priority/' + ticket.priority + '.svg'} /></div>}
+            <div className='card-footer-tags'>
                 {ticket.tag.map(tag => {
                     return(<Tag tag={tag}/>)
                 })}

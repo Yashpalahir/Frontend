@@ -23,11 +23,13 @@
 
 .group-title {
     font-weight: 500;
+    font-size: 14px;
 }
 
 .group-count {
     color: #707070;
     font-weight: 100px;
+    font-size: 14px;
 }
 
 .card-title-right {
@@ -41,9 +43,15 @@
     align-items: center;
     background: none;
     border: none;
+    border-radius: 20px;
     outline: none;
     padding: 5px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-title-right-btn:hover {
+    background-color: #E5E5E5;
 }
 
 .card-title-right-btn img {

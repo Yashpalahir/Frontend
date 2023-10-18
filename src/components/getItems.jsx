@@ -34,6 +34,8 @@ await axios.get('https://api.quicksell.co/v1/internal/frontend-assignment')
             };
         })
 
-        DATA = {status: status, user: user, priority: priority, users: users}
-})
+        DATA = {status: status, user: user, priority: priority, users: users};
+    }).catch(function (response) {
+        DATA = {status: [], user: [], priority: [], users: []};
+    })
 export default DATA;

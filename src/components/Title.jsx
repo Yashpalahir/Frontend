@@ -1,7 +1,6 @@
 import React from 'react'
 import './styles/Title.css'
 
-const urgentIcon = '/icons/urgent.svg'
 const plusIcon = '/icons/plus.svg'
 const ellipsisIcon = '/icons/ellipsis.svg'
 
@@ -24,14 +23,13 @@ function Title({title, grouping, count, available = true}) {
             </div>
             : grouping === 'status' ? <img src={'/icons/status/' + title + '.svg'} /> 
             : grouping === 'priority' ? <img src={'/icons/priority/' + priorityCode[title] + '.svg'} /> : null}
-            {/* <img src={urgentIcon}/> */}
             <span className='group-title'>{title}</span>
             <span className='group-count'>{count}</span>
         </div>
-        <div className='card-title-right'>
+        {count > 0 ? <div className='card-title-right'>
             <button className='card-title-right-btn'><img src={plusIcon}/></button>
             <button className='card-title-right-btn'><img src={ellipsisIcon}/></button>
-        </div>
+        </div> : null}
     </div>
   )
 }

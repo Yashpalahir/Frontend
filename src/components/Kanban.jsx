@@ -27,8 +27,6 @@ function Kanban() {
     }, [grouping])
 
     useEffect(() => {if(grouping === 'priority') {setOrdering('title')}}, [grouping])
-
-    console.log(DATA.users.filter(e => e.id === 'usr-2'))
   return (
     <div className='page'>
         <Navbar grouping={grouping} ordering={ordering} setGrouping={setGrouping} setOrdering={setOrdering} />
