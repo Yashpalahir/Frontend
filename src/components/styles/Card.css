@@ -3,10 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     background-color: #FFFFFF;
     border-radius: 8px;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 20px;
     margin-top: 20px;
 }
@@ -77,10 +76,10 @@
 
 
 .card-body img {
-    height: 20px;
+    height: 15px;
     width: 10%;
     margin-right: 5px;
-    /* margin-top: 5px; */
+    margin-top: 1px;
 }
 
 .card-body span {
